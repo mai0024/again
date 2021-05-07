@@ -4,8 +4,269 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=dvice-width,initial-scale=1.0">
   <title>自己紹介サイト</title>
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <style type="text/css">
+    .fadein {
+     opacity : 0;
+     transform: translateY(24px);
+     transition: 1.5s;
+    }
+    body{
+      margin: 0;
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+    nav{
+      margin-top: 90px;
+      margin-left: 193px;
+      scroll-behavior: smooth;
+    }
+    nav a{
+      text-decoration: none;
+      color: #707070;
+      padding-right: 58px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    nav a:hover{
+    opacity: 0.8;
+}
+    .mv{
+      width: 684px;
+      height: 502px;
+      margin-top: 111px;
+      float: right;
+      margin-right: 193px;
+      background-image: url("img/mv1.png");
+      z-index: 2;
+    }
+    .name{
+      width: 423px;
+      height: 170px;
+      margin-top: 245px;
+      margin-left: 193px;
+      background-image: url("img/mv_name.png");
+      position: relative;
+      z-index: 1;
+    }
+    .title{
+      position: relative;
+      display: inline-block;
+      padding: 0 55px;
+      color:#707070;
+      font-size: 30px;
+      font-weight: 600;
+      margin-top: 363px;
+      display: block;
+      text-align: center;
+      margin-bottom: 90px;
+    }
+
+    .title:before, .title:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      display: inline-block;
+      width: 115px;
+      height: 2px;
+      background-color:#707070;
+    }
+
+    .title:before {
+      left:500px;
+    }
+    .title:after {
+      right: 500px;
+    }
+    .profile{
+      background-image: url("img/profile.png");
+      width: 360px;
+      height: 309px;
+      margin-left: 193px;
+      z-index: 3;
+    }
+    .square{
+      width: 750px;
+      height: 295px;
+      background:rgba(250,236,245,0.5);
+      position: relative;
+      float: right;
+      margin-top: -210px;
+      margin-right: 193px;
+      z-index: 4;
+      
+    }
+    .square .p{
+      width: 515px;
+      color:#3C3C3C;
+      position: absolute;
+      letter-spacing: 0.02em;
+      top: 50%;
+      left: 50%;
+      line-height: 24px;
+      transform: translateY(-50%)translateX(-50%);
+      
+    }
+    
+    .hobbyimg{
+      display: flex;
+      justify-content: space-between;
+      margin: 0 193px;
+    }
+    .cafe{
+      width: 300px;
+      height: 300px;
+      background-image: url("img/afternoontea.png");
+      z-index: 6;
+    }
+
+    .make{
+      width: 300px;
+      height: 300px;
+      background-image: url("img/make.png");
+      margin-top: 90px;
+      z-index: 6;
+    }
+    .dance{
+      width: 300px;
+      height: 300px;
+      background-image: url("img/dance.png");
+      z-index: 6;
+    }
+    .hobbyname{
+      color:#B3C9CB;
+      font-size: 22px;
+      font-weight: 600;
+      margin-top: 285px;
+    }
+    .square02{
+      width: 980px;
+      height: 178px;
+      background-color: #E6EFF1;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: -350px;
+      opacity: 0.3;
+      z-index: 5;
+    }
+    .square03{
+      background-image: url("img/future_waku.png");
+      width: 980px;
+      height: 365px;
+      transform:translateX(-50%);
+      left: 50%;
+      position:relative;
+      margin-bottom: 190px;
+    }
+    .text{
+      position:absolute;
+      transform: translateY(-50%)translateX(-50%);
+      top: 50%;
+      left: 50%;
+      letter-spacing: 0.04em;
+      color: #3C3C3C;
+    }
+    footer{
+      width: 100%;
+      height: 60px;
+      background-color: #FCF8C6;
+}
+ 
+  
+  </style>
 </head>
 <body>
+  <!-- メインビジュアルとナビ -->
+  <div class="main">
+  <nav>
+    <a href="index.html">Self PR</a>
+    <a href="#a">About</a>
+    <a href="#b">Hobby</a>
+    <a href="#c">Future</a>
+  </nav>
+  <div class="mv"></div>
+  <div class="name"></div>
+</div>
+
+  <!-- ここからAbout -->
+  <div class="fadein">
+    <div class="about" id="a">
+      <div class="title">About</div>
+        <div class="profile"></div>
+        <div class="square">
+          <div class="p">
+           <p>千葉県在住の21歳、山本真衣です。</p>
+           <p>今年の春から新社会人として、入社しました。</p>
+           <p>今は研修期間で、たくさんの事を日々、学んでいます。</p>
+           <p>一人前のエンジニアとして活躍できるよう、精一杯、頑張ります！</p>
+         </div>
+    </div>
+  </div>
+  </div>
+  <!-- ここからHobby -->
+  <div class="fadein">
+    <div class="hobby" id="b">
+      <div class="title">Hobby</div>
+      <div class="hobbyimg">
+       <div class="cafe"><p class="hobbyname">Visiting cafes</p></div>
+       <div class="make"><p class="hobbyname">Make up</p></div>
+       <div class="dance"><p class="hobbyname">dancing</p></div>
+      </div>
+     <div class="square02"></div>
+   </div>
+ </div>
+  <!-- ここからFuture -->
+ <div class="fadein">
+  <div class="future" id="c">
+    <div class="title">Future</div>
+    <div class="square03">
+      <div class="text">
+        <p>私は将来、フロントエンドエンジニアとして活躍したいです。</p>
+        <p>専門学校では、Webサイトのデザインやコーディングを</p>
+        <p>学びました。一人前のエンジニアとなれるよう、</p>
+        <p>今後も勉強に励み、努めて参りますので</p>
+        <p>よろしくお願いいたします。</p>
+      </div>
+    </div>
+  </div>
+ </div>
+
+
+  <footer></footer>
+
+  <script>
+    function fadeinEvent() {
+    // getElementsByClassName で、fadein のクラスを持つ要素を取得し配列として保持
+    var fadeinClass= Array.prototype.slice.call(document.getElementsByClassName("fadein"));
+
+    // 配列の数だけ処理を行う
+    fadeinClass.forEach(function( element ) {
+
+        // getBoundingClientRect で要素の位置や幅や高さなどを取得
+        var boundingClientRect = element.getBoundingClientRect();
+
+        // スクロールの位置情報（html のスクロールがなければ、body のスクロール）を取得
+        var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+        // ブラウザウィンドウの ビューポートの高さ
+        var windowHeight = window.innerHeight;
+
+        // スクロールの位置が、フェードインしたい要素の位置にいるかどうか判定する
+        if (scroll > scroll + boundingClientRect.top - windowHeight + 200){
+
+            // 要素を表示する場合は、要素の透明度を無くし、Y方向の移動距離を無くす。これで表示される
+            element.style.opacity = "1";
+            element.style.transform = "translateY(0)";
+        }
+        });
+        }
+window.onload = function(){
+    // 画面が中途半端なスクロール位置でリロードされても表示するべきものが表示されるようにするため、ロードですぐに呼び出す
+    fadeinEvent();
+
+    // スクロールしたら動くエベントとして用意しておく。スクロールするたびに動くようにする
+    window.addEventListener('scroll', fadeinEvent, false);
+}
+  </script>
 </body>
 </html>
